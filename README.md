@@ -4,14 +4,14 @@
 Компании 9 лет. ~ 1.5 млн. посетителей в месяц, https://www.similarweb.com/website/groupprice.ru
 
 ## Технологический стек
-RoR 6
-Ruby 2.7
-Dry-rb
-Slim, SCSS
-Webpacker, Stimulus, ES6
-Rspec
-PostgreSQL
-rubocop, eslint, slim-lint, stylelint, prettier
+- RoR 6
+- Ruby 2.7
+- Dry-rb
+- Slim, SCSS
+- Webpacker, Stimulus, ES6
+- Rspec
+- PostgreSQL
+- rubocop, eslint, slim-lint, stylelint, prettier
 
 ## Ключевая информация по организации работы
 
