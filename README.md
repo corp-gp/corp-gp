@@ -50,4 +50,4 @@ https://github.com/corp-gp/pronto-brakeman
  - [@ermolaev - markdown message with link](https://github.com/prontolabs/pronto-brakeman/pull/22)
 
 https://github.com/zaru/webpush
-- [@ermolaev - Fix authorization header](https://github.com/zaru/webpush/pull/72)
+- [@xronos-i-am - Fix authorization header](https://github.com/zaru/webpush/pull/72)
