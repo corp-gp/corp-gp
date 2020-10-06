@@ -95,7 +95,7 @@ https://github.com/github/view_component
 
 ### PageSpeed Insights
 Измерения необходимо проводить с одного и того же устройства, тестируется страница каталога - платье, как самая покупаемая вещь одежды
-- [https://groupprice.ru/categories/platiya-jens](https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fgroupprice.ru%2Fcategories%2Fplatiya-jens&tab=mobile) - mobile 60, desktop 87
+- [https://groupprice.ru/categories/platiya-jens](https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fgroupprice.ru%2Fcategories%2Fplatiya-jens&tab=mobile) - mobile 49, desktop 87
 - [https://www.ozon.ru/category/platya-zhenskie-7502/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.ozon.ru%2Fcategory%2Fplatya-zhenskie-7502%2F&tab=mobile) - mobile 28, desktop 56
 - [https://www.lamoda.ru/c/369/clothes-platiya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.lamoda.ru%2Fc%2F369%2Fclothes-platiya%2F&tab=mobile) - mobile 19, desktop 78
 - [https://www.wildberries.ru/catalog/zhenshchinam/odezhda/platya](https://developers.google.com/speedpagespeed/insights/?url=https%3A%2F%2Fwww.wildberries.ru%2Fcatalog%2Fzhenshchinam%2Fodezhda%2Fplatya&tab=mobile) - mobile 6, desktop 70
