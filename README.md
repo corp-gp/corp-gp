@@ -35,14 +35,19 @@
 - mailer - управление email и push рассылками
 
 ## Работа над задачей
-Задача создается в тикет системе (ptask), из которой можно сразу создать Merge Request в Gitlab. После написания кода, он проходит ревью. В проверке попеременно участвуют все сотрудники IT-отдела. Случайным образом выбираются 2 проверяющих (1 Senior и 1 Middle/Junior), которые автоматически добавляются к MR и получают уведомления о коммитах в Gitlab. В нем и проходит ревью кода. Каждый коммит проходит автоматическую валидацию при помощи [rubocop](https://github.com/rubocop-hq/rubocop), [slim-lint](https://github.com/sds/slim-lint), [eslint](https://github.com/eslint/eslint), [stylelint](https://github.com/stylelint/stylelint). Помимо этого в работе используется [соглашение о стилях](https://github.com/corp-gp/corp-gp/blob/main/STYLEGUIDE.md). Для деплоя используется Gitlab CI/CD. После аппрува MR запускается lint и прогоняются тесты, при успешном завершении происходит автоматический deploy в production.
+1. Задача создается в тикет системе (ptask), из которой можно сразу создать Merge Request в Gitlab.
+1. После написания кода, он проходит ревью. В проверке попеременно участвуют все сотрудники IT-отдела. Случайным образом выбираются 2 проверяющих (1 Senior и 1 Middle/Junior), которые автоматически добавляются к MR и получают уведомления о коммитах в Gitlab. В нем и проходит ревью кода.
+1. Локально на каждый коммит запускаются линтеры: [rubocop](https://github.com/corp-gp/rubocop-gp), [slim-lint](https://github.com/sds/slim-lint), [eslint](https://github.com/eslint/eslint), [stylelint](https://github.com/stylelint/stylelint). Помимо этого в работе используется [соглашение о стилях](https://github.com/corp-gp/corp-gp/blob/main/STYLEGUIDE.md). 
+1. Для деплоя используется Gitlab CI/CD. После аппрува MR запускается линтеры и тесты, при успешном завершении происходит автоматический deploy в production.
 
 ## OpenSource
 ### Собственные репозитории (в том числе поддерживаемые форки)
 - https://github.com/corp-gp/rails_string_enum
 - https://github.com/corp-gp/activerecord-clean-db-structure
 - https://github.com/corp-gp/lintbot
-### MR
+- https://github.com/corp-gp/rubocop-gp
+
+### Pull requests
 https://github.com/corp-gp/delayed_job
  - [@xronos-i-am - Improve payload_object logging](https://github.com/collectiveidea/delayed_job/pull/1120)
 
