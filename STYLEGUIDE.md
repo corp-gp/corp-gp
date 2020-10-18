@@ -37,10 +37,12 @@ users_by_product_id = users.group_by(&:product_id)
 # StimulusJS
 - https://github.com/skatkov/awesome-stimulusjs
 - https://www.betterstimulus.com/
+- https://github.com/stimulus-use/stimulus-use
 
 # SQL
 ### Другие стайлгайды
 https://www.sqlstyle.guide/ru/
+https://docs.telemetry.mozilla.org/concepts/sql_style.html
 
 ### Типовое оформление запроса
 
