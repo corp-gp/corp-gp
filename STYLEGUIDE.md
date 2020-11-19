@@ -39,6 +39,23 @@ users_by_product_id = users.group_by(&:product_id)
 - https://www.betterstimulus.com/
 - https://github.com/stimulus-use/stimulus-use
 
+# CSS
+Пример оформления CSS классов
+- класс верхнего уровня - минимум 2 слова, через kebab-case (удобно искать, нет персесечения с js, ruby кодом)
+- не стоит делать вложенность более 3
+- `&--item` разворачивается в `brand-list--item`
+
+```scss
+.brand-list {
+  &--item {
+  }
+  &--title {
+  }
+  &--button {
+  }
+}
+```
+
 # SQL
 ### Другие стайлгайды
 https://www.sqlstyle.guide/ru/
