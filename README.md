@@ -55,6 +55,7 @@ https://github.com/corp-gp/delayed_job
 
 https://github.com/corp-gp/mini_sql
 - [@xronos-i-am - Fix symbol param encoder](https://github.com/discourse/mini_sql/pull/9)
+- [@xronos-i-am & @ermolaev - Serializable materializer](https://github.com/discourse/mini_sql/pull/23)
 - [@ermolaev - add query_array](https://github.com/discourse/mini_sql/pull/10)
 - [@ermolaev - add query_decorator](https://github.com/discourse/mini_sql/pull/13)
 - [@ermolaev - empty array encoding compatibility with Sequel and ActiveRecord](https://github.com/discourse/mini_sql/pull/14)
