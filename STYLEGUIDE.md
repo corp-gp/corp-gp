@@ -13,7 +13,7 @@ user_by_product_id = users.index_by(&:product_id)
 users_by_product_id = users.group_by(&:product_id)
 ```
 
-### Именование мотодов которые присваивают аттрибуты  начинаются с assign
+### Именование методов, которые присваивают аттрибуты, начинаются с assign
 
 ```
 class TaskForm
