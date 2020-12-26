@@ -13,6 +13,60 @@ user_by_product_id = users.index_by(&:product_id)
 users_by_product_id = users.group_by(&:product_id)
 ```
 
+### Именование мотодов которые присваивают аттрибуты  начинаются с assign
+
+```
+class TaskForm
+  
+  def create(params)
+    self.attributes = params
+    assign_owner
+    save
+  end
+  
+  private def assign_owner
+    self.owner_id = 1
+  end
+
+end
+```
+
+
+### Установка инстанс переменных в контроллере
+только явное присвоение
+
+#### плохо
+```
+class TaskController < ApplicationController
+  before_action :show, :edit
+  
+  def show; end
+  def edit; end
+  
+  private def set_task
+    @task = Task.find(params[:id])
+  end
+end
+```
+
+#### хорошо
+```
+class TaskController < ApplicationController
+  
+  def show
+    @task = fetch_task
+  end
+  
+  def edit
+    @task = fetch_task
+  end
+  
+  private def fetch_task
+    Task.find(params[:id])
+  end
+end
+```
+
 ### Именование временных полей в бд, переменных
 - Временная метка с секундами `(datetime)` с суффиксом  - `_at`
 - Время до дня `(date)` с суффиксом - `_on`
