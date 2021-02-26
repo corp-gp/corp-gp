@@ -55,13 +55,18 @@ https://github.com/corp-gp/delayed_job
 
 https://github.com/corp-gp/mini_sql
 - [@xronos-i-am - Fix symbol param encoder](https://github.com/discourse/mini_sql/pull/9)
-- [@xronos-i-am & @ermolaev - Serializable materializer](https://github.com/discourse/mini_sql/pull/23)
-- [@xronos-i-am - Compacted JSON serialization](https://github.com/discourse/mini_sql/pull/24)
 - [@ermolaev - add query_array](https://github.com/discourse/mini_sql/pull/10)
 - [@ermolaev - add query_decorator](https://github.com/discourse/mini_sql/pull/13)
 - [@ermolaev - empty array encoding compatibility with Sequel and ActiveRecord](https://github.com/discourse/mini_sql/pull/14)
 - [@ermolaev - improve test_query_decorator](https://github.com/discourse/mini_sql/pull/16)
 - [@ermolaev - remove double checked empty params](https://github.com/discourse/mini_sql/pull/18)
+- [@xronos-i-am & @ermolaev - Serializable materializer](https://github.com/discourse/mini_sql/pull/23)
+- [@xronos-i-am - Compacted JSON serialization](https://github.com/discourse/mini_sql/pull/24)
+- [@xronos-i-am - Marshallable serializer](https://github.com/discourse/mini_sql/pull/25)
+- [@ermolaev - fix encode date](https://github.com/discourse/mini_sql/pull/28)
+- [@ermolaev - real to_sql](https://github.com/discourse/mini_sql/pull/29)
+- [@ermolaev - add query_array and group_by to builder](https://github.com/discourse/mini_sql/pull/31)
+- [@xronos-i-am - Results equality](https://github.com/discourse/mini_sql/pull/33)
 
 https://github.com/corp-gp/pronto-reek
 - [@ermolaev - markdown message with link](https://github.com/prontolabs/pronto-reek/pull/25)
