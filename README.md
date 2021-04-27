@@ -46,6 +46,8 @@
 - https://github.com/corp-gp/activerecord-clean-db-structure
 - https://github.com/corp-gp/lintbot
 - https://github.com/corp-gp/rubocop-gp
+- https://github.com/corp-gp/factory_bot-preload
+- https://github.com/corp-gp/email_stylist
 
 
 ### Pull requests
@@ -67,6 +69,7 @@ https://github.com/corp-gp/mini_sql
 - [@ermolaev - real to_sql](https://github.com/discourse/mini_sql/pull/29)
 - [@ermolaev - add query_array and group_by to builder](https://github.com/discourse/mini_sql/pull/31)
 - [@xronos-i-am - Results equality](https://github.com/discourse/mini_sql/pull/33)
+- [support prepared statements](https://github.com/discourse/mini_sql/pull/20)
 
 https://github.com/corp-gp/pronto-reek
 - [@ermolaev - markdown message with link](https://github.com/prontolabs/pronto-reek/pull/25)
