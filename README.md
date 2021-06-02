@@ -134,18 +134,18 @@ https://github.com/github/view_component
 1000-10000	 | Вероятное переключение мыслей на другие задачи
 10000 и более	| Задача отменяется (система не работает)
 
-Среднее время ответа нашего бекенда 115 мс (даже учитывая что в основном каждый запрос отдает html, нам есть куда стремиться)
-![image](https://user-images.githubusercontent.com/938305/95205175-af9ede00-07ed-11eb-84cd-dc52d5daf071.png)
+Среднее время ответа нашего бекенда 65 мс,учитывая что в основном каждый запрос отдает html, неплохой результат.
+![image](https://user-images.githubusercontent.com/938305/120470716-8b12fa00-c3ac-11eb-9f5f-28f197fd97c9.png)
 
 Половина времени уходит на выполнение SQL запросов, на страницах каталога сложные запросы для фильтрации, персональные сортировки, для обеспечения приемлемой производительности требуется глубокое понимание работы сайта - настройка nginx, кэши, защита от ddos, перезагрузка приложения без простоя, понимание работы rails, ruby, настройка параметров БД и знание подходов к оптимизации sql.
 
 ### PageSpeed Insights
 Измерения необходимо проводить с одного и того же устройства, тестируется страница каталога - платье, как самая покупаемая вещь одежды
-- [https://groupprice.ru/categories/platiya-jens](https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fgroupprice.ru%2Fcategories%2Fplatiya-jens&tab=mobile) - mobile 49, desktop 87
-- [https://www.ozon.ru/category/platya-zhenskie-7502/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.ozon.ru%2Fcategory%2Fplatya-zhenskie-7502%2F&tab=mobile) - mobile 28, desktop 56
-- [https://www.lamoda.ru/c/369/clothes-platiya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.lamoda.ru%2Fc%2F369%2Fclothes-platiya%2F&tab=mobile) - mobile 19, desktop 78
-- [https://www.wildberries.ru/catalog/zhenshchinam/odezhda/platya](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.kupivip.ru%2Fcatalog%2Fzhenschinam%2Fodezhda%2Fplatya-i-sarafany) - mobile 18, desktop 44
-- [https://www.kupivip.ru/catalog/zhenschinam/odezhda/platya-i-sarafany](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.kupivip.ru%2Fcatalog%2Fzhenschinam%2Fodezhda%2Fplatya-i-sarafany&tab=mobile) - mobile 18, desktop 40
-- [https://www.bonprix.ru/kategoriya/dlya-zhenshchin-odezhda-platya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.bonprix.ru%2Fkategoriya%2Fdlya-zhenshchin-odezhda-platya%2F) - mobile 31, desktop 59
+- [https://groupprice.ru/categories/platiya-jens](https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fgroupprice.ru%2Fcategories%2Fplatiya-jens&tab=mobile) - mobile 60, desktop 96
+- [https://www.ozon.ru/category/platya-zhenskie-7502/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.ozon.ru%2Fcategory%2Fplatya-zhenskie-7502%2F&tab=mobile) - mobile 47, desktop 71
+- [https://www.lamoda.ru/c/369/clothes-platiya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.lamoda.ru%2Fc%2F369%2Fclothes-platiya%2F&tab=mobile) - mobile 30, desktop 60
+- [https://www.wildberries.ru/catalog/zhenshchinam/odezhda/platya](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.wildberries.ru%2Fcatalog%2Fzhenshchinam%2Fodezhda%2Fplatya&tab=mobile) - mobile 18, desktop 72
+- [https://www.kupivip.ru/catalog/zhenschinam/odezhda/platya-i-sarafany](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.kupivip.ru%2Fcatalog%2Fzhenschinam%2Fodezhda%2Fplatya-i-sarafany&tab=mobile) - mobile 30, desktop 57
+- [https://www.bonprix.ru/kategoriya/dlya-zhenshchin-odezhda-platya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.bonprix.ru%2Fkategoriya%2Fdlya-zhenshchin-odezhda-platya%2F) - mobile 31, desktop 80
 
 Знаете как сделать еще быстрее? Пишите https://t.me/a_ermolaev
