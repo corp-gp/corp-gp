@@ -130,7 +130,7 @@ API позволяет получить список текущих заказа
 
 *Методы Api*
 
-**1. Получение списка закупок /purchases.
+**1. Получение списка закупок /purchases.**
 
 Пример: https://psupplier.groupprice.ru/api/test/purchases?api_token=XXXX
 ```js
