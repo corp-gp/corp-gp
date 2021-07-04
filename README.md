@@ -10,9 +10,10 @@
 - Ruby 2.7
 - Dry-rb
 - Slim, SCSS
-- Webpacker, Stimulus, ES6
+- Hotwire, Webpacker, Stimulus, ES6
 - Rspec
-- PostgreSQL
+- PostgreSQL 13
+- ClickHouse
 - rubocop, eslint, slim-lint, stylelint, prettier
 
 ## Ключевая информация по организации работы
