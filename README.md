@@ -52,6 +52,8 @@
 
 
 ### Pull requests
+https://github.com/dry-rb/dry-effects
+- [@ermolaev - fix resolving dependencies via nested names](https://github.com/dry-rb/dry-effects/pull/81)
 
 https://github.com/corp-gp/delayed_job
 - [@xronos-i-am - Improve payload_object logging](https://github.com/collectiveidea/delayed_job/pull/1120)
