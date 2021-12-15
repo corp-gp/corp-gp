@@ -86,6 +86,9 @@ https://github.com/zaru/webpush
 https://github.com/github/view_component
 - [@xronos-i-am - Move render check](https://github.com/github/view_component/pull/186)
 
+https://github.com/mileszs/wicked_pdf
+- [@xronos-i-am - Fix check webpacker version](https://github.com/mileszs/wicked_pdf/pull/964)
+
 ## Арихитектура Rails приложения
 Все приложения реализуют серверный HTML рендеринг, в редких случаях результат отдается в JSON, с последующим рендерингом на клиенте. За счет этого имеются следующие преимущества:
 - быстрое, удобное, при необходимости изолированное или полное тестирование страницы без браузера
