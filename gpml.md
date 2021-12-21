@@ -223,9 +223,9 @@ API позволяет получить список текущих заказа
 Также товары в `line_items` могут удаляться, если пользователь отменил заказ, поэтому на стороне вызывающей API следует учесть уменьшение количества зарезервированных товаров
 
 # Интеграция через Webhooks
-При данном виде интеграции мы шлем http запросы на ваш сервер
+При данном виде интеграции идет моментальная отправка товара на резервирование сразу после создания заказа пользователем 
 
-Примеры запросов уилитой https://httpie.io/docs#usage
+Примеры HTTP запросов на сервер поставщика можно съэмулировать утилитой https://httpie.io/docs#usage
 
 ```
 http --json --verbose POST https://domain.ru/api_orders/reserve variant_id=12345 purchase_id=234
@@ -233,10 +233,10 @@ http --json --verbose POST https://domain.ru/api_orders/cancel_reserve variant_i
 http --json --verbose POST https://domain.ru/api_orders/finish_reserve purchase_id=234
 ```
 
-- `shop_variant_id` ваш штрихкод, или ID варианта
-- `purchase_id` - наш ID закупки
+- `variant_id` штрихкод товара поставщика, или ID варианта
+- `purchase_id` - ID закупки groupprice.ru
 
-данные послылаются в `json` формате (`Content-Type: application/json`), в ответе ваш серер должен присылать `json` данные
+данные посылаются в `json` формате (`Content-Type: application/json`), в ответе сервер поставщика должен присылать `json` данные
 
 при успешном запросе -  http статус 200, `{ result: "ok" }`
 
