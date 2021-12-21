@@ -221,3 +221,29 @@ API позволяет получить список текущих заказа
 ```
 
 Также товары в `line_items` могут удаляться, если пользователь отменил заказ, поэтому на стороне вызывающей API следует учесть уменьшение количества зарезервированных товаров
+
+# Интеграция через Webhooks
+При данном виде интеграции мы шлем http запросы на ваш сервер
+
+Примеры запросов уилитой https://httpie.io/docs#usage
+
+```
+http --json --verbose POST https://domain.ru/api_orders/reserve variant_id=12345 purchase_id=234
+http --json --verbose POST https://domain.ru/api_orders/cancel_reserve variant_id=12345 purchase_id=234
+http --json --verbose POST https://domain.ru/api_orders/finish_reserve purchase_id=234
+```
+
+- `shop_variant_id` ваш штрихкод, или ID варианта
+- `purchase_id` - наш ID закупки
+
+данные послылаются в `json` формате (`Content-Type: application/json`), в ответе ваш серер должен присылать `json` данные
+
+при успешном запросе -  http статус 200, `{ result: "ok" }`
+
+при не успешном - http статус 422
+```
+{
+  error_type: "product_not_available",
+  error_message: "Товар не зарезервирован, на складе не достаточное количество"
+}
+```
