@@ -40,6 +40,7 @@
         <description> <!-- Описание -->
           Верх украшен кружевом, на талии бантик - смотрится изящно!
         </description>
+        <country_of_origin>Россия</country_of_origin> <!-- Страна производства -->
         <!-- URL-ссылки на картинки товара -->
         <picture>https://you-style.ru/upload/f67f646484f8.jpeg</picture>
         <picture>https://you-style.ru/upload/s3of6464g6dr.jpeg</picture>
@@ -72,6 +73,7 @@
           Трикотаж невероятно приятен к телу.
           С брошкой в комплекте.
         </description>
+        <country_of_origin>Китай</country_of_origin> <!-- Страна производства -->
         <picture>https://you-style.ru/upload/54bf646484f8.jpeg</picture>
         <picture>https://you-style.ru/upload/54bf6464g6dr.jpeg</picture>
         <picture>https://you-style.ru/upload/74bf646484f8.jpeg</picture>
