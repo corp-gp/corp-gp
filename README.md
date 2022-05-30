@@ -1,12 +1,12 @@
 ## О компании
 [GroupPrice.ru](https://groupprice.ru) – маркетплейс товаров, на площадке представлена продукция сотни поставщиков, основная специализация - женская одежда. Сборку заказа пользователя осуществляем на собственных площадях, складская логистика реализована по кросс-докинг модели (минимальные складские запасы). Загрузка товаров и синхронизация складских остатков происходит через [YML формат](http://https://yandex.ru/support/partnermarket/export/yml.html "YML формат").
 
-- Компании 9 лет. ~ 1.5 млн. посетителей в месяц, https://www.similarweb.com/website/groupprice.ru
-- Общее количество сотрудников 80 человек.
+- Компании 10 лет. ~ 2 млн. посетителей в месяц
+- Общее количество сотрудников 100 человек.
 - Свой склад площадью 14500 кв.м. и офисы 2800 кв.м.
 
 ## Технологический стек
-- RoR 6
+- RoR 7
 - Ruby 2.7
 - Dry-rb
 - Slim, SCSS
@@ -147,11 +147,10 @@ https://github.com/mileszs/wicked_pdf
 
 ### PageSpeed Insights
 Измерения необходимо проводить с одного и того же устройства, тестируется страница каталога - платье, как самая покупаемая вещь одежды
-- [https://groupprice.ru/categories/platiya-jens](https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fgroupprice.ru%2Fcategories%2Fplatiya-jens&tab=mobile) - mobile 60, desktop 96
-- [https://www.ozon.ru/category/platya-zhenskie-7502/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.ozon.ru%2Fcategory%2Fplatya-zhenskie-7502%2F&tab=mobile) - mobile 47, desktop 71
-- [https://www.lamoda.ru/c/369/clothes-platiya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.lamoda.ru%2Fc%2F369%2Fclothes-platiya%2F&tab=mobile) - mobile 30, desktop 60
-- [https://www.wildberries.ru/catalog/zhenshchinam/odezhda/platya](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.wildberries.ru%2Fcatalog%2Fzhenshchinam%2Fodezhda%2Fplatya&tab=mobile) - mobile 18, desktop 72
-- [https://www.kupivip.ru/catalog/zhenschinam/odezhda/platya-i-sarafany](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.kupivip.ru%2Fcatalog%2Fzhenschinam%2Fodezhda%2Fplatya-i-sarafany&tab=mobile) - mobile 30, desktop 57
-- [https://www.bonprix.ru/kategoriya/dlya-zhenshchin-odezhda-platya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.bonprix.ru%2Fkategoriya%2Fdlya-zhenshchin-odezhda-platya%2F) - mobile 31, desktop 80
+- [https://groupprice.ru/categories/platiya-jens](https://developers.google.com/speed/pagespeed/insights/?hl=RU&url=https%3A%2F%2Fgroupprice.ru%2Fcategories%2Fplatiya-jens&tab=mobile) - mobile 70, desktop 98
+- [https://www.ozon.ru/category/platya-zhenskie-7502/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.ozon.ru%2Fcategory%2Fplatya-zhenskie-7502%2F&tab=mobile) - mobile 52, desktop 80
+- [https://www.lamoda.ru/c/369/clothes-platiya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.lamoda.ru%2Fc%2F369%2Fclothes-platiya%2F&tab=mobile) - mobile 29, desktop 68
+- [https://www.wildberries.ru/catalog/zhenshchinam/odezhda/platya](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.wildberries.ru%2Fcatalog%2Fzhenshchinam%2Fodezhda%2Fplatya&tab=mobile) - mobile 18, desktop 48
+- [https://www.bonprix.ru/kategoriya/dlya-zhenshchin-odezhda-platya/](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.bonprix.ru%2Fkategoriya%2Fdlya-zhenshchin-odezhda-platya%2F) - mobile 35, desktop 68
 
 Знаете как сделать еще быстрее? Пишите https://t.me/a_ermolaev
