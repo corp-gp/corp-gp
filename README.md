@@ -7,7 +7,7 @@
 
 ## Технологический стек
 - RoR 7
-- Ruby 2.7
+- Ruby 3.1
 - Dry-rb
 - Slim, SCSS
 - Hotwire, Webpacker, Stimulus, ES6
