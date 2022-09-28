@@ -257,7 +257,7 @@ curl --location --request POST 'https://psupplier.groupprice.ru/api/test/stocks?
 
 **4. Изменение цен /prices**
 
-В метод передается массив струтур, содержажих поле `barcode` - штрихкод SKU, оптовую цену `price_supplier` и, опционально, розничную `price_usual`
+В метод передается массив струтур, содержажих поле `barcode` - штрихкод SKU, оптовую цену `price_supplier`. Также может содержать опционально текущую розничную `price_usual` и розничную без скидки `price_before_sale` цены
 Пример: 
 
 Запрос:
