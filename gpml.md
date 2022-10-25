@@ -270,7 +270,8 @@ curl --insecure --location --request POST 'https://psupplier.groupprice.ru/api/t
     {
       "barcode": "1005004632052714",
       "price_supplier": 100,
-      "price_usual": 200
+      "price_usual": 200,
+      "price_before_sale": 120
     }
   ]
 }'
@@ -283,6 +284,7 @@ curl --insecure --location --request POST 'https://psupplier.groupprice.ru/api/t
     "barcode": "1005004632052714",
     "price_supplier": "100.0",
     "price_usual": "200.0",
+    "price_before_sale": "120.0",
     "updated": true
   }
 ]
