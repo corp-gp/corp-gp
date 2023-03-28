@@ -2,7 +2,9 @@
 
 Формат выгрузки основан на [YML (Yandex Market Language)](https://yandex.ru/support/partnermarket/export/yml.html)
 
-Но расширен тегом `variant` с вложениями `size`, `quantity`, `barcode`
+Но расширен тегами
+* `variant` с вложениями `size`, `quantity` и `barcode`
+* `vendorModel`
 
 ```xml
 <!--
@@ -35,6 +37,7 @@
         <vendor>Твой Стиль</vendor> <!-- Бренд, название производителя -->
         <model>Блузка в полоску</model> <!-- Модель и название товара -->
         <vendorcode>1720000523</vendorcode> <!-- Артикул, код товара производителя -->
+        <vendorModel>m-1</vendorModel> <!-- Идентификатор модели для группировки по цветам  -->
         <typePrefix>Блузка</typePrefix> <!-- Тип/категория товара - Брюки, платье, Футболка -->
         <price>2340</price> <!-- Оптовая цена товара -->
         <description> <!-- Описание -->
@@ -69,6 +72,7 @@
         <vendor>Твой Стиль</vendor>
         <model>Платье с брошкой</model>
         <vendorcode>1720000582</vendorcode>
+        <vendorModel>m-2</vendorModel>
         <description>
           Трикотаж невероятно приятен к телу.
           С брошкой в комплекте.
