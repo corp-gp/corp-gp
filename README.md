@@ -10,9 +10,9 @@
 - Ruby 3.1
 - Dry-rb
 - Slim, SCSS
-- Hotwire, Webpacker, Stimulus, ES6
+- Hotwire, Stimulus, Vite.JS
 - Rspec
-- PostgreSQL 13
+- PostgreSQL 15
 - ClickHouse
 - rubocop, eslint, slim-lint, stylelint, prettier
 
