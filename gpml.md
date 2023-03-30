@@ -46,8 +46,10 @@
         <country_of_origin>Россия</country_of_origin> <!-- Страна производства -->
         <!-- URL-ссылки на картинки товара -->
         <picture>https://you-style.ru/upload/f67f646484f8.jpeg</picture>
-        <picture>https://you-style.ru/upload/s3of6464g6dr.jpeg</picture>
+        <picture>https://you-style.ru/upload/s1of6464g6dr.jpeg</picture>
         <picture>https://you-style.ru/upload/a3hf646484f8.jpeg</picture>
+        <!-- URL-ссылка на видео товара в формате MP4, WebM -->
+        <video>https://you-style.ru/upload/trf646fj2e.mp4</video>
         <!-- Характеристики товара — цвет, размер, объем, материал, вес, возраст, пол, и т. д. -->
         <param name="Цвет">оранжевый</param>
         <param name="Ткань">атлас</param>
