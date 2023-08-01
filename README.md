@@ -65,6 +65,7 @@ https://github.com/corp-gp/mini_sql
 - [@ermolaev - empty array encoding compatibility with Sequel and ActiveRecord](https://github.com/discourse/mini_sql/pull/14)
 - [@ermolaev - improve test_query_decorator](https://github.com/discourse/mini_sql/pull/16)
 - [@ermolaev - remove double checked empty params](https://github.com/discourse/mini_sql/pull/18)
+- [@ermolaev - support prepared statements](https://github.com/discourse/mini_sql/pull/20)
 - [@xronos-i-am & @ermolaev - Serializable materializer](https://github.com/discourse/mini_sql/pull/23)
 - [@xronos-i-am - Compacted JSON serialization](https://github.com/discourse/mini_sql/pull/24)
 - [@xronos-i-am - Marshallable serializer](https://github.com/discourse/mini_sql/pull/25)
@@ -72,7 +73,7 @@ https://github.com/corp-gp/mini_sql
 - [@ermolaev - real to_sql](https://github.com/discourse/mini_sql/pull/29)
 - [@ermolaev - add query_array and group_by to builder](https://github.com/discourse/mini_sql/pull/31)
 - [@xronos-i-am - Results equality](https://github.com/discourse/mini_sql/pull/33)
-- [support prepared statements](https://github.com/discourse/mini_sql/pull/20)
+- [@xronos-i-am - allow multiple occurencies of builder statements](https://github.com/discourse/mini_sql/pull/50)
 
 https://github.com/corp-gp/pronto-reek
 - [@ermolaev - markdown message with link](https://github.com/prontolabs/pronto-reek/pull/25)
