@@ -297,9 +297,12 @@ curl --insecure --location --request POST 'https://psupplier.groupprice.ru/api/t
 ```
 
 # Интеграция через Webhooks
-При данном виде интеграции идет моментальная отправка товара на резервирование сразу после создания заказа пользователем 
+При данном виде интеграции идет моментальная отправка товара на резервирование сразу после создания заказа пользователем. API-сервис должен отвечать на три метода:
+1) резервирование товара
+2) отмена резерва
+3) финализация отгрузки (закупки)
 
-Примеры HTTP запросов на сервер поставщика можно съэмулировать утилитой https://httpie.io/docs#usage
+Примеры HTTP запросов на сервер поставщика можно сэмулировать утилитой https://httpie.io/docs#usage
 
 ```
 http --json --verbose POST https://domain.ru/api_orders/reserve variant_id=12345 purchase_id=234
@@ -310,11 +313,11 @@ http --json --verbose POST https://domain.ru/api_orders/finish_reserve purchase_
 - `variant_id` штрихкод товара поставщика, или ID варианта
 - `purchase_id` - ID закупки groupprice.ru
 
-данные посылаются в `json` формате (`Content-Type: application/json`), в ответе сервер поставщика должен присылать `json` данные
+Данные посылаются в `json` формате (`Content-Type: application/json`), в ответе сервер поставщика должен присылать `json` данные
 
-при успешном запросе -  http статус 200, `{ result: "ok" }`
+При успешном резервировании в ответе должен быть http статус 200, `{ result: "ok" }`
 
-при не успешном - http статус 422
+При отсутствии товара на складе поставщика - http статус 422
 ```
 {
   error_type: "product_not_available",
