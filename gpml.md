@@ -48,7 +48,7 @@
         <picture>https://you-style.ru/upload/f67f646484f8.jpeg</picture>
         <picture>https://you-style.ru/upload/s1of6464g6dr.jpeg</picture>
         <picture>https://you-style.ru/upload/a3hf646484f8.jpeg</picture>
-        <!-- URL-ссылка на видео товара в формате MP4, WebM -->
+        <!-- URL-ссылка на видео товара в формате MP4, MOV. Высота должна быть больше ширины и быть в диапазоне 800 - 2000px, размер файла не более 100 MB -->
         <video>https://you-style.ru/upload/trf646fj2e.mp4</video>
         <!-- Характеристики товара — цвет, размер, объем, материал, вес, возраст, пол, и т. д. -->
         <param name="Цвет">оранжевый</param>
