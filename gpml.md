@@ -1,6 +1,6 @@
 # GroupPrice Market Language
 
-Формат выгрузки основан на [YML (Yandex Market Language)](https://yandex.ru/support/partnermarket/export/yml.html)
+Формат выгрузки основан на [YML (Yandex Market Language)](https://yandex.ru/support/partnermarket/export/yml.html), [доп. описание полей](https://yandex.ru/support/marketplace/assortment/fields/index.html)
 
 Но расширен тегами
 * `variant` с вложениями `size`, `quantity` и `barcode`
@@ -54,6 +54,10 @@
         <param name="Цвет">оранжевый</param>
         <param name="Ткань">атлас</param>
         <param name="Состав">полиэстер 97%, эластан 3%</param>
+        <!-- Код ТН ВЭД,  может быть несколько <tn-ved-code>, каждый из которых содержит один из кодов товара. -->
+        <tn-ved-codes>
+          <tn-ved-code>8517610008</tn-ved-code>
+        </tn-ved-codes>
         <!-- Варианты товара, в карточке товара выберается пользователем -->
         <variant>
           <!-- (Необязателен) Уникальный идентификатор, возвращается в API -->
