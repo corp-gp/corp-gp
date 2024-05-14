@@ -17,13 +17,13 @@ users_by_product_id = users.group_by(&:product_id)
 
 ```
 class TaskForm
-  
+
   def create(params)
     self.attributes = params
     assign_owner
     save
   end
-  
+
   private def assign_owner
     self.owner_id = 1
   end
@@ -39,10 +39,10 @@ end
 ```
 class TaskController < ApplicationController
   before_action :show, :edit
-  
+
   def show; end
   def edit; end
-  
+
   private def set_task
     @task = Task.find(params[:id])
   end
@@ -52,15 +52,15 @@ end
 #### хорошо
 ```
 class TaskController < ApplicationController
-  
+
   def show
     @task = fetch_task
   end
-  
+
   def edit
     @task = fetch_task
   end
-  
+
   private def fetch_task
     Task.find(params[:id])
   end
@@ -107,6 +107,19 @@ end
   ._side { }
   ._comments-wrapper { }
 }
+```
+
+# HTML
+* `data`-атрибуты пишем всегда полностью, чтобы можно было найти поиском по проекту.
+* В stimulus атрибуты передаём через [values](https://stimulus.hotwired.dev/reference/values), элементы через [targets](https://stimulus.hotwired.dev/reference/targets).
+
+```slim
+.__products--card(
+  data-controller="products--card"
+  data-products--card-product-id-value=product.id
+  data-referer-from="preview_product_name"
+)
+  ._gallery data-products--card-target="gallery"
 ```
 
 # SQL
