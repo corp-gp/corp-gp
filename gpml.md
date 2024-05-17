@@ -45,6 +45,8 @@
         </description>
         <country_of_origin>Россия</country_of_origin> <!-- Страна производства -->
         <!-- URL-ссылки на картинки товара -->
+        <!-- фото одежды должно быть размером от 1200(ширина) Х 1800(высота) px -->
+        <!-- фото предметов должно быть размером от 1200x1200 px -->
         <picture>https://you-style.ru/upload/f67f646484f8.jpeg</picture>
         <picture>https://you-style.ru/upload/s1of6464g6dr.jpeg</picture>
         <picture>https://you-style.ru/upload/a3hf646484f8.jpeg</picture>
