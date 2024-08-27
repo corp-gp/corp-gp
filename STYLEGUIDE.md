@@ -15,7 +15,7 @@ users_by_product_id = users.group_by(&:product_id)
 
 ### Именование методов, которые присваивают аттрибуты, начинаются с assign
 
-```
+```ruby
 class TaskForm
 
   def create(params)
@@ -36,7 +36,7 @@ end
 только явное присвоение
 
 #### плохо
-```
+```ruby
 class TaskController < ApplicationController
   before_action :show, :edit
 
@@ -50,20 +50,29 @@ end
 ```
 
 #### хорошо
-```
+```ruby
 class TaskController < ApplicationController
 
   def show
-    @task = fetch_task
+    @task = record
   end
 
   def edit
-    @task = fetch_task
+    render Form.new(record:).view_component
   end
-
-  private def fetch_task
-    Task.find(params[:id])
+  
+  def update
+    form = Form.new(record:, params:)
+  
+    case form.update
+    in Success(task)
+      redirect_to task_path(task, notice: t("flash.update"))
+    else
+      render form.view_component, status: :unprocessable_entity
+    end
   end
+  
+  private def record = Task.find(params[:id])
 end
 ```
 
